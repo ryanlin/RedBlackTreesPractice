@@ -16,5 +16,10 @@ int main() {
 	jose.setItem(12);
 	std::cout << jose.getItem() << std::endl;
 
+
+	RedBlackNode<int> john;
+	john.setItem(15);
+	john.setLeftChildPtr(&jose);
+	std::cout << john.getItem() << " \t John's Child: " << jose.getItem() << std::endl;
 	return 0;
 }

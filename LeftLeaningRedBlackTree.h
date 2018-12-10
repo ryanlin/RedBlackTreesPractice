@@ -8,7 +8,7 @@ class LeftLeaningRedBlackTree
 {
 private:
 	RedBlackNode<ItemType>* mroot;
-	int mheight;
+
 protected:
 
 public:
@@ -19,7 +19,7 @@ public:
 	~LeftLeaningRedBlackTree() {/*blank for now*/}
 //Getters abd Element Access
 	bool isEmpty() const { return mroot == NULL; }
-	int getHeight() const { return mheight; }
+	int getHeight() const;
 //?	RedBlackNode& getEntry(int index);
 //?	ItemType getItem{int index;
 //Modifiers
