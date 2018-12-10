@@ -1,11 +1,22 @@
 //HW8 -Ruilin Lin
 
 #include<iostream>
-//#include:"RedBlackTree.h"
-#include"RedBlackNode.h"
+#include"LeftLeaningRedBlackTree.h"
+//#include"RedBlackNode.h"
 
 int main() {
 
+
+	RedBlackNode<int> josh;
+	josh.setItem(20);
+
+	LeftLeaningRedBlackTree<int> toe;
+	LeftLeaningRedBlackTree<int> tim(josh);
+
+	std::cout << "tim: " << tim.getNumberOfNodes() << std::endl
+		  << "toe: " << toe.getNumberOfNodes() << std::endl;
+
+/*
 	std::cout << "Hello World" << std::endl;
 
 	RedBlackNode<int> jim(RED,BLACK);
@@ -21,5 +32,8 @@ int main() {
 	john.setItem(15);
 	john.setLeftChildPtr(&jose);
 	std::cout << john.getItem() << " \t John's Child: " << jose.getItem() << std::endl;
+*/
+
+
 	return 0;
 }
